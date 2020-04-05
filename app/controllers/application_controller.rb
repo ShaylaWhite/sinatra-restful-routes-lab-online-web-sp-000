@@ -1,4 +1,5 @@
-
+require "./config/environment"
+require "./app/models/recipes"
 
 class ApplicationController < Sinatra::Base
   configure do
