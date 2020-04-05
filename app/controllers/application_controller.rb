@@ -7,9 +7,9 @@ class ApplicationController < Sinatra::Base
     set :views, 'app/views'
   end
 
-   get "/recipes" do
-    erb :recipes
+   get '/' do
   end
+
 
 
 end
