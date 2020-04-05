@@ -2,21 +2,22 @@ require "./config/environment"
 require "./app/models/recipe"
 
 class ApplicationController < Sinatra::Base
+  
   configure do
     set :public_folder, 'public'
     set :views, 'app/views'
- end
+  end
 
-   get '/' do
+  get '/' do
   end
   
   get '/recipes' do
-  @recipes = Recipe.all
+    @recipes = Recipe.all
     erb :index
   end
 
   post '/recipes' do
     erb :recipe
-
-end
+  end
+  
 end
