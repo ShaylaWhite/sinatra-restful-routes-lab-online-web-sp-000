@@ -1,4 +1,3 @@
 class CreateRecipes < ActiveRecord::Migration
-  def change
-  end
+  rake db:migrate SINATRA_ENV=test
 end
