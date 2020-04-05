@@ -17,4 +17,5 @@ class ApplicationController < Sinatra::Base
 
   post '/recipes' do
     erb :recipe
+
 end
