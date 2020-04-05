@@ -4,6 +4,8 @@ class ApplicationController < Sinatra::Base
     set :views, 'app/views'
   end
 
-  <form> </form>
+   get '/'
+   
+   erb
 
 end
